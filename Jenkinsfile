@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/your-username/your-repo.git'
+                git 'https://github.com/cthien24032002/learn-cicd-jetkin.git'
             }
         }
 
