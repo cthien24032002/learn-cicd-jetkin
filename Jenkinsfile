@@ -49,10 +49,11 @@
 pipeline {
     agent any
     stages {
-        stage('Build Docker Image') {
+        stage('Check Docker') {
             steps {
-                sh 'docker build -t my-image .'
+                sh 'docker --version'
             }
         }
     }
 }
+
